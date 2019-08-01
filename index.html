@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Horse Race</h1>
+    <button id="race" class="btn btn-info">Start Race!</button>
+</header>
+<div class="vl"></div>
+<div class="horse1 hrs" id="hrs1"><img
+        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfENFpLX20N1I1Cze0dazf3Bw4mKxs2GAfqFEBOfb0SuDdf5a_Og"
+        alt="Horse 1">1
+</div>
+<div class="horse2 hrs" id="hrs2"><img
+        src="http://www.marathontownandcountry.com/publishImages/Breyer-Horses~Breyer-Traditional~Breyer-Traditional~~element54~~32.jpg"
+        alt="Horse 2">2
+</div>
+<div class="horse3 hrs" id="hrs3"><img src="https://www.riderslodge.com.my/assets/images/horse-noimage.png" alt="Horse 3">3
+</div>
+<div class="horse4 hrs" id="hrs4"><img
+        src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxAOEA4PDhAOEBASDQ0QEBURDhsQEA4WIBEiIiAdHx8kKDQsJCYxJxkfLTMkMSssMDAwIys0RD8uOjQ5OjcBCgoKDg0OEhAQFSsZHx03MjcrKy0xLTc1MzA3KzMtNy0tNzc3Ky0vKysrKysrNysrLS0rKysrKzgtKzcrKysrK//AABEIAGQAZAMBIgACEQEDEQH/xAAcAAEAAgMBAQEAAAAAAAAAAAAAAQcDBQYCBAj/xAAyEAABAwIEBAQEBgMAAAAAAAABAAIDBBEFBhIhEzFBUQciYXGBkaGxFCMkMlLBM0LR/8QAGAEBAAMBAAAAAAAAAAAAAAAAAAECAwT/xAAeEQEBAAICAwEBAAAAAAAAAAAAAQIRAxIhIjFBBP/aAAwDAQACEQMRAD8AvAlEKIF0REBLoougm6i6rvM+aq2OufTUgiLYxGAHOH5hIub/AGXfUkrnsY57dDi0FzdWrSbcr9VG4arPdLoikLpdEQSiIggohQoCIiCCtHmrGBSQOLSBK4EM9PX4Ldu6qrM/4bMxnEicXanua/WfluteGYXKdr4Z8ly6+r4MGxLhVH6phnilla9zjvbbn7rcYjnxzpJZIniCGGEvjbJb9Y4SWLbcxcXsubxGeljo4qamY59U6PTM97z+USNyB1PZc1NhfBa15OogjV7WVf6OXj7ek8r8HFya9vi7I8/4eQDxXC4HOJ223svtGbKEta8VMRDr6d9/kqPjrwO3LoP7XyxPs+ORpc18cjXNsOt7rlnLa6Lwz8fpON+oAi+4B32PJe18GC14qYI5gANYuQDcAr71tPLD4lERSIKIUQEUEr5MRxGKmYZJntY0dSee3IIIxbEGUsEk8gcWRtLnadzZVPmLxCp6uOeIRSRxva7Q9zvNrtcbLZZgzo+r1QRs4cLgQS43fIL/AEVXVtPpOp1zE2RxPd/ntYetlMm8e0p8y6108dM1xDm7HS03HS4WoxKocCWyHl1H+wuvsgqCw6muDmuALT0cOixYjA2UX1WcB1HNcmV3lduzGesdrS+HQrKaJ0cnBBiDg4t18UkbbbaR9+y5jFcpV9CXSSxh0YG7mHUwj17LNReJFXRxwwNMbgxrWhro73AHcK7KN4qYI3SRgCWFrnMcL21N3BW0kyYW5Y1wfhJikjjUUrzqa1rZmWGzN7OH2Vkha3CsDpqPV+HibGXW1EczZbFWxmppnld3b0iIrIQUKFQUGjzbmOHDIDPLuTcRsBs6R3ZUvW5iqMQdxqh1xqdoYP2Ri/IBYfFPHzW1rwLiOAuhYD3B8x+JCw4DhMxonVRA4QmDB33HP2WfJL18NOLXbyzySE2cDuL8l7o4JJ9MELHPdqc5oaPMb879/ivknk0j32VqeG2XPw0X4mT/ACzMGkfwZz+ZWfHLW3LZHNQ5CfADJOSA55McbBrDNr+b7WCyZjwysqb0sdOyKN1mtdFTBoPbe17f9Vr3U3XVLNfHJd7+uCyL4bRUWmerDZqgHUy4uyLb6lWGvDSsiqkRECCUREEFY5iQ0kC5sbDuVkK8uQUdQ+GdbWzSz1rmU4dI5521ucS652B2XYeIkkdBhrYoow2IyRx2aLNYOd/ou5euYz/Qmqw6siDbu4Rc33G6izc0mXV2qfK0Da2upoZARG46rfzba/8ASvxlmgAWAAAA7bKksPc+ndglRoIkhjkp5m2sXAG4+jyrcdM479FGOHVOWfZsTIFHFWs1u9V7aHdirKttG+6zha+mB6rYNQSiIglERAKghCiDyWLFNTte1zHAFrmlpHcWWdEFcVGV5uKIIIeBHrLhNtJp22suwwXBzTxNjkkMzm38xFtrrbIgxiBo6JwQsqIMYjCyAIiAixSyFvJpdz5LV1OKzMmbG2lkcw6bvB/bupktRbI3SLzdFCXpERAREQFCIgKURAREQQosiKKJREVlX//Z"
+        alt="Horse 4">4
+</div>
+<div class="horse5 hrs" id="hrs5"><img
+        src="https://www.papo-france.com/616-small_default/competition-horse-with-rider.jpg" alt="Horse 5">5
+</div>
+<div class="horse6 hrs" id="hrs6"><img
+        src="https://i0.wp.com/horsesinthesouth.com/blog/wp-content/uploads/2019/03/khp-logo.jpg?resize=200%2C200"
+        alt="Horse 6">6
+</div>
+<img src="http://i2.wp.com/clipartportal.com/wp-content/uploads/2018/12/racing-finish-line-clipart-8-200x200.jpg" alt="Race Flag"
+     id="flag">
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">We Have Winner!!!</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                ...
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">New Game</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+
+    $("#race").click(animateSprite)
+
+    function animateSprite() {
+        // Set initial speed
+        const minSpeed = 1000;
+
+        // Get random speed
+        const horse1Speed = parseInt(minSpeed + Math.random() * 1000, 10);
+        const horse2Speed = parseInt(minSpeed + Math.random() * 1000, 10);
+        const horse3Speed = parseInt(minSpeed + Math.random() * 1000, 10);
+        const horse4Speed = parseInt(minSpeed + Math.random() * 1000, 10);
+        const horse5Speed = parseInt(minSpeed + Math.random() * 1000, 10);
+        const horse6Speed = parseInt(minSpeed + Math.random() * 1000, 10);
+
+        const speedArr = [horse1Speed, horse2Speed, horse3Speed, horse4Speed, horse5Speed, horse6Speed];
+        // Animate
+        speedArr.forEach((s, i) => $(`.horse${i + 1}`).animate({"left": "+=70%"}, s));
+
+
+        setTimeout(function () {
+            let maxSpeed = Math.min(...speedArr);
+            console.log(maxSpeed)
+            speedArr.forEach((s, i) => {
+                if (maxSpeed === s) {
+                    console.log(s, i);
+                    jQuery.noConflict();
+                    $('.modal-body').text(`Horse ${i + 1} Wins!`);
+                    $('#exampleModalCenter').modal('show');
+                }
+            })
+        }, Math.max(...speedArr) + 100);
+    }
+    $('.btn-primary').click(() => {
+        $(".hrs").css('left', 0);
+    })
+</script>
+</body>
+</html>
+
+
